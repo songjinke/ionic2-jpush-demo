@@ -18,7 +18,6 @@ npm-debug.log*
 .versions/
 coverage/
 dist/
-node_modules/
 tmp/
 temp/
 hooks/
@@ -32,3 +31,10 @@ $RECYCLE.BIN/
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
+
+/node_modules/*
+!/node_modules/ionic-native
+!/node_modules/ionic-native/dist
+!/node_modules/ionic-native/dist/es5/plugins
+!/node_modules/ionic-native/dist/esm/plugins
+

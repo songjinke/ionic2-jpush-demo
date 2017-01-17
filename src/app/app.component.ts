@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
-import { StatusBar, Splashscreen } from 'ionic-native';
+import { StatusBar, Splashscreen, JPush } from 'ionic-native';
 
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -17,6 +17,10 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       StatusBar.styleDefault();
       Splashscreen.hide();
+
+      if (platform.is('android') || platform.is('ios')) {
+        JPush.init();
+      }
     });
   }
 }
